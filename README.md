@@ -1,1 +1,1 @@
-# pewmusic
+worker: node bot.js
