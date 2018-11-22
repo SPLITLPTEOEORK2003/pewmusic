@@ -232,9 +232,9 @@ if (message.content.startsWith(adminprefix + 'setT')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
    } else  
-  if (message.content.startsWith(adminprefix + 'setwt')) {
+  if (message.content.startsWith(adminprefix + 'wt')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`✅`)
+      message.channel.send(`**✅   ${argresult}**`)
 
 client.on("message", message => {
  if (message.content === `Phelp`) {
