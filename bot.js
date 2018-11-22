@@ -231,15 +231,16 @@ client.user.setAvatar(argresult);
 if (message.content.startsWith(adminprefix + 'setT')) {
   client.user.setGame(argresult, "https://www.twitch.tv/idk");
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
- } else  
-  if (message.content.startsWith(adminprefix + 'setwt')) {
+  } else  
+  if (message.content.startsWith(adminprefix + 'wt')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
+      message.channel.send(`✅ `)
 }
 
 });
 
 client.on("message", message => {
- if (message.content === `4help`) {
+ if (message.content === `Phelp`) {
   const embed = new Discord.RichEmbed() //by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
       .setColor("#000000")//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
       .setDescription(`
